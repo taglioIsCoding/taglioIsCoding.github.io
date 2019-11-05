@@ -7,10 +7,32 @@
     <title>Bakkale Crew</title>
 
     <link rel="stylesheet" href="./style.css">
+
+    <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "./icons/home1.jpeg";
+          images[1] = "./icons/homw2.jpeg";
+          images[2] = "./icons/Bakkale.jpeg";
+      </script>
+
   </head>
 
 
-  <body>
+  <body onload = "startTimer()">
 
 
 
@@ -21,8 +43,10 @@
       <li><a href="aboutUs.html">About Us</a></li>
     </ul>
 
+
+
   <div align="center">
-    <img  src="./icons/Bakkale.jpeg"  >
+    <img  src="./icons/Bakkale.jpeg">
   </div>
 
 
@@ -34,6 +58,13 @@
       <footer>- <cite>Un uomo faggio</cite></footer>
 
   </blockquote>
+
+  <div class="" align="center">
+    <img id="img"  src="./icons/Bakkale.jpeg"/ style="width:1024px;height:724px;">
+    <button  type="button" onclick="displayPreviousImage()">Previous</button>
+    <button  type="button" onclick="displayNextImage()">Next</button>
+  </div>
+
 
 
 
