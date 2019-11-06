@@ -8,31 +8,13 @@
 
     <link rel="stylesheet" href="./style.css">
 
-    <script type = "text/javascript">
-          function displayNextImage() {
-              x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("img").src = images[x];
-          }
 
-          function displayPreviousImage() {
-              x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
-          }
-
-          function startTimer() {
-              setInterval(displayNextImage, 3000);
-          }
-
-          var images = [], x = -1;
-          images[0] = "./icons/home1.jpeg";
-          images[1] = "./icons/homw2.jpeg";
-          images[2] = "./icons/Bakkale.jpeg";
-      </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
 
 
-  <body onload = "startTimer()">
+  <body>
 
 
 
@@ -59,11 +41,7 @@
 
   </blockquote>
 
-  <div class="" align="center">
-    <img id="img"  src="./icons/Bakkale.jpeg"/ style="width:1024px;height:724px;">
-    <button  type="button" onclick="displayPreviousImage()">Previous</button>
-    <button  type="button" onclick="displayNextImage()">Next</button>
-  </div>
+
 
 
 
@@ -73,16 +51,22 @@
   <footer align="center" class="footerAll">
 
     <br>
+    <br>
 
-    <div class="">
-      <a href="https://www.facebook.com"><img src="./icons/facebook.png" width="80" height="80" ></a>
-      <a href="https://www.instagram.com/bakkale_crew"><img src="./icons/instagram-2.png" width="60" height="60" ></a>
-      <a href="https://github.com/taglioIsCoding"><img src="./icons/github-logo.png" width="60" height="60" ></a>
-    </div>
+    <div class="bottom">
+      <a href="#" class="fa fa-facebook" style="font-size: 50px;"></a>
+      <a href="#" class="fa fa-youtube" style="font-size: 50px;"></a>
+      <a href="#" class="fa fa-instagram" style="font-size: 50px;"></a>
+      <a href="#" class="fa fa-github" style="font-size: 50px;"></a>
 
-  <p class="footer">Posted by: Michele Tagliani</p>
-  <p class="footer">Contact information: <a href="mailto:bakkalecrew@gmail.com">
+
+  <p >Posted by: Michele Tagliani</p>
+  <p >Contact information: <a href="mailto:bakkalecrew@gmail.com">
   bakkalecrew@gmail.com</a>.</p>
+
+ </div>
+
+  </div>
 
 </footer>
 </html>
