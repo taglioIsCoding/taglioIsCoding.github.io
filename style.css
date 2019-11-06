@@ -184,10 +184,11 @@ div.desc {
 }
 
 .bottom{
-  
-
+  background: #FB6652;
+  border-radius: 0%;
 }
 
-.bottom.p{
+.bottom_p{
+  font-size: 13px;
   color:white;
 }
