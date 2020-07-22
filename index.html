@@ -1,38 +1,273 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!-- Using multiple languages is possible, but the page is english only atm -->
+<html lang="en">
 
 <head>
-
-
   <meta charset="utf-8">
-  <title>Bakkale Crew</title>
-
-  <link rel="stylesheet" href="./style.css">
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="jquery-2.1.4.js"></script>
+  <!-- Title in the browser tab -->
+  <title>Michele Tagliani</title>
+  <!-- Description used when the site is added to favorites -->
+  <meta name="description" content="Michele Tagliani">
+  <meta name="author" content="Michele Tagliani" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- This attribute controls the Chrome action bar color on mobile devices -->
+  <meta name="theme-color" content="#000000">
+  <!-- Css files involved, including the local css and FontAwesome v5 -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-
 
 <body>
 
-<div align="center">
-  <h1>Something new is coming</h1>
-</div>
+  <!-- Particles.js container used as a background. Removing it removes the particles -->
+  <div id="particles-js"></div>
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header - a logo, a short sentence -->
+    <header id="header" class="alt">
+      <span class="logo"><img src="images/logo.png" alt="" /></span>
+      <p>Computer Science Student</p>
+
+      <!-- A set of social media and quick links. Up to four links are supported -->
+      <ul class="icons">
+        <li><a href="https://github.com/taglioIsCoding" target="_blank" class="fab fa-github fa-2x"></a></li>
+        <li><a href="https://www.instagram.com/michele.tagliani/?hl=it" target="_blank" class="fab fa-instagram fa-2x"></a></li>      </ul>
+      </section>
+    </header>
+
+    <!-- Nav - navbar of contents, used in the desktop version -->
+    <nav id="nav">
+      <ul>
+        <li><a href="#intro" class="active">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">ToDos</a></li>
+        <li><a href="#infos">Download my CV</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main - the "white part" -->
+    <div id="main">
+
+      <!-- Introduction - an image and a bio -->
+      <section id="intro" class="main special">
+        <div class="spotlight">
+          <div class="content">
+            <header class="major">
+              <h2><b>About me</b></h2>
+            </header>
+            <p id="me"></p>
+          </div>
+          <span class="image"><img src="images/profile.png" alt="" /></span>
+        </div>
+      </section>
+
+      <!-- Skills - list of scopes and related skills -->
+      <section id="skills" class="main special">
+        <header class="major">
+          <h2><b>MY PERSONAL SKILLS</b></h2>
+        </header>
+
+        <!-- Other entries can be added to the list of scopes and to the list of skills 
+        The icons are from FontAwesome v5: choose one from their site and type its name to use it -->
+        <h2><i class="fas fa-code"></i><b>Programming Skills.</b></h2>
+        <ul class="features outline">
+          <li>Java</li>
+          <li>C/C++</li>
+          <li>Javascript</li>
+          <li>React Native</li>
+          <li>HTML/CSS</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+
+        <h2><i class="fas fa-laptop"></i><b>Softwares and platforms</b></h2>
+        <ul class="features outline">
+          <li>MacOS</li>
+          <li>Linux</li>
+          <li>Raspberry PI</li>
+          <li>Windows</li>
+          <li>Arduino</li>
+        </ul>
+
+        <h2><i class="fas fa-car"></i><b>Driving Licence</b></h2>
+        <ul class="features outline">
+          <li><i class="fas fa-motorcycle"></i>AM</li>
+          <li><i class="fas fa-car"></i>B</li>
+        </ul>
+
+        <h2><i class="fas fa-suitcase"></i><b>Languages</b></h2>
+        <ul class="features outline">
+          <li>Italian</li>
+          <li>English</li>
+        </ul>
+      </section>
+
+      <!-- Projects - small introduction, list of projects -->
+      <section id="projects" class="main special">
+        <header class="major">
+          <h2><b>MY ACHIEVEMENTS</b></h2>
+          <p>All the things I have done and the ones I'm planning to do.</p>
+        </header>
+
+        <!-- A small description, an image and a link. Nothing more. Other entries can be added -->
+        <div class="spotlight">
+          <div class="content">
+            <header class="major">
+              <h3><b>Entertainer</b></h3>
+            </header>
+            <div>
+              <span class="image-small"><img src="images/sales.png" alt="" /></span>
+              <p>
+                If there's something I've always loved is <b>play and take care of other people</b>. 
+                Since 2016 and for the following 4 summers I spent 5 week as a volunteer in the youth center near
+                my primary school.
+                During this 4 years I also made some training courses where I learn how to assist and 
+                to communicates with children. You will see my certificate down below soon (if I can find it).
+              </p>
+            </div>
+              <a href="" class="button small" target="_blank">See the result</a>
+          </div>
+        </div>
+
+        <div class="spotlight">
+          <div class="content">
+            <header class="major">
+              <h3><b>The life of a student in the UK</b></h3>
+            </header>
+            <div>
+              <span class="image-small"><img src="images/UK-flag.jpg" alt="" /></span>
+              <p>
+                I love travelling and thanks to my school I have the opportunity to
+                live in <b><a target="_blank" href="https://www.google.com/maps/search/google+maps+liverpool/@53.4076428,-3.0561409,11z/data=!3m1!4b1">Liverpool</a></b> for one week, 
+                during which I had the opportunity to develop independence and my English knowledge. 
+                I stay in family and I attended the <b><a target="_blank" href="https://www.lse.uk.net">Liverpool school of English</a></b>. I also got an <b>English certification,</b> 
+                You will see my certificate down below soon (if I can find it). 
+              </p>
+            </div>
+            <a href="" class="button small" target="_blank">See the results.</a>
+          </div>
+        </div>
+
+      <div class="spotlight">
+        <div class="content">
+          <header class="major">
+            <h3><b>Regesta S.R.L</b></h3>
+          </header>
+          <div>
+            <span class="image-small"><img src="images/Regesta.png" alt="" /></span>
+            <p>
+              During the 2019 summer I spent a month in <b><a target="_blank" href="https://www.regestaitalia.eu">Regesta</a></b>, a company that develop new tecnologes  
+              for industries. 
+              On commission I have deepened and implemented an IOT system that can manage a table football.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spotlight">
+        <div class="content">
+          <header class="major">
+            <h3><b>Degree</b></h3>
+          </header>
+          <div>
+            <span class="image-small"><img src="images/IISCastelli.png" alt="" /></span>
+            <p>
+              After 5 years of school, 
+              I graduated in computer science from <b><a target="_blank" href="https://www.iiscastelli.edu.it/Pager.aspx?Page=mainpage">IIS Castelli</a></b> with a vote of 
+              98/100.
+               you can find my diploma below soon (when my school gets it).
+            </p>
+          </div>
+          <a href="" class="button small" target="_blank">See the results.</a>
+        </div>
+      </div>
+
+    </section>
+
+
+      <!-- More infos - statistics and a personal goal -->
+      <section id="infos" class="main special">
+        <header class="major">
+          <h2><b>Download my CV</b></h2>
+          <p>All I want is to use my natural attitudes to improve a little piece of world.
+            Work and ambitions are important, but only if you can share your progresses with
+            someone you love.</p>
+            <a href="https://github.com/xStevatt/xstevatt.github.io/blob/master/Certificates/StatementOfResult.pdf" class="button small" target="_blank">See my CV</a>
+        </header>
+      </section>
+
+
+      <strong id="experience"></strong> 
+    </div>
+
+    <!-- Footer - contacts and another short text -->
+    <footer id="footer">
+      <section>
+        <h2>Contact me:</h2>
+        <!-- A final message for the viewer -->
+        <p>You can contact me for various reasons, and I'll do my best to answer you.
+          You can do it to ask for assistance with my apps, to suggest improvements, or to give
+          a feedback. I'll also consider offers, eventually!</p>
+      </section>
+      <section>
+        <h2>How to contact me:</h2>
+        <!-- Some contact informations. Other informations can be added -->
+        <dl class="alt">   
+          <dt>Email</dt>
+          <dd><a href="mailto:tagliamiki@icloud.com?Subject=Request">tagliamiki@icloud.com</a></dd>      
+          <dt>City</dt>
+          <dd><a href="https://www.google.it/maps/place/Brescia+BS/@45.5436018,10.1886594,13z/data=!3m1!4b1!4m5!3m4!1s0x4781766ea2b0294d:0x22cd4615476aea04!8m2!3d45.5415526!4d10.2118019">Brescia, Italy</a></dd>
+          <dt>Social</dt>
+          <dd>
+            <ul class="icons">
+              <li><a href="https://github.com/taglioIsCoding" target="_blank" class="fab fa-github"></a></li>
+              <li><a href="https://www.instagram.com/michele.tagliani/" target="_blank" class="fab fa-instagram"></a></li>
+            </ul>
+          </dd>
+        </dl>
+      </section>
+      <p class="copyright">Copyright &copy; <span id="year"></span> Michele Tagliani</p>
+    </footer>
+  </div>
+
+
+  <!-- Scripts - some arent't used, but could be useful -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <script>
+    // Variables to change to correctly generate the initial description and other informations
+    birthYear = 2001; // Year of birth
+    birthMonth = 6; // Month of birth, without leading zero
+    birthDay = 9; // Day of birth, without leading zero
+    experienceStart = 2013; // Year from which the experience starts (e.g. when i wrote my first line of code)
+    date = new Date();
+    year = date.getFullYear();
+    experience = year - experienceStart;
+
+    // Assign the years of experience in the statistics
+    document.getElementById('experience').innerHTML = experience;
+
+    // Assign the current year to the copyright line
+    document.getElementById('year').innerHTML = year; 
+
+    age = year - birthYear;
+    // The initial description. It is meant to be modified freely
+    me = "I am a "+age +" years old student that loves computer science, programming and tecnology. Welcome to my website!  I hope you like it.";
+
+    document.getElementById('me').innerHTML = me;
+  </script>
 
 </body>
 
-  <!-- Begin Inspectlet Asynchronous Code -->
-<script type="text/javascript">
-(function() {
-window.__insp = window.__insp || [];
-__insp.push(['wid', 896187313]);
-var ldinsp = function(){
-if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=896187313&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
-setTimeout(ldinsp, 0);
-})();
-</script>
-<!-- End Inspectlet Asynchronous Code -->
-  
 </html>
